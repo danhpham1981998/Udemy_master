@@ -1,0 +1,22 @@
+footer{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:6.4rem  0 4.8rem;
+    .footer__logo{
+        padding-left: $pd-2;
+        a{
+            img{
+                width: 20%;
+                display:block;
+                
+            }
+        }
+        
+    }
+    .footer__copyright{
+        p{
+            @include styleText($color-gray-4,$fs-1, $fw-normal);
+        }
+    }
+}

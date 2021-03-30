@@ -1,0 +1,17 @@
+.ownpace{
+    margin-top: $mg-2;
+    padding: 0 $pd-2;
+    .ownpace__item{
+        .ownpace__img{
+            margin-right: $mg-1;
+        }
+        .ownpace__text{
+            h2{
+                @include styleText($color-black-0,$fs-2, $fw-bold);
+            }
+            p{
+                @include styleText($color-black-0,$fs-0, $fw-normal);
+            }
+        }
+    }
+}

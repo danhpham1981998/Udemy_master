@@ -1,0 +1,70 @@
+@mixin styleText($color,$fs,$fw) {
+    color:$color;
+    font-size:$fs;
+    font-weight:$fw;
+}
+@mixin styleFormSearch($bg-color,$bd-color,$bd-focus) {
+    .input-group{
+        background-color:$bg-color;
+        border: 1px solid $bd-color;
+        .form-control{
+            background-color: transparent;
+            border-color: transparent;
+            box-shadow: none;
+            transition: none;
+            &:focus{
+                background-color:$color-white-0;
+                border-color: $bd-focus;
+                border-right-color: transparent;
+                //.form-control:focus
+                & + .input-group-append{
+                    .input-group-text{
+                        background-color:$color-white-0;
+                        border-color: $bd-focus;
+                        border-left-color: transparent;
+                        &:hover{
+                            color: $color-white-0;
+                            background-color:$color-red-0;
+                        }
+                    }
+                }
+            }
+        }
+        .input-group-text{
+            background-color:transparent;
+            border-color: transparent;
+            color: $color-red-0;
+            &:hover{
+                color: $color-white-0;
+                background-color:$color-red-0;
+            }
+        }
+    }
+}
+@mixin styleButton($bg-color,$border-color,$pd-y,$pd-x,$bd-radius){
+    background-color:$bg-color;
+    border: 1px solid $border-color;
+    padding:$pd-y $pd-x;
+    border-radius:$bd-radius;
+}
+@mixin styleButtonHover($color,$bg-color,$border-color) {
+    color: $color;
+    background-color:$bg-color;
+    border-color:$border-color;
+}
+//screen: small, medium,..
+@mixin responsive($screen){
+    //kiểm tra screen có tồn tại trong $breakpoints hay không
+    @if(map-has-key($map:$breakpoints, $key:$screen)){
+        //Nếu tìm thấy
+        //Lấy giá trị của screen gán vào cho biến $value
+        $value:map-get($map:$breakpoints, $key:$screen);
+        @media screen and (max-width:$value){
+            @content;
+        }
+
+    }
+    @else{
+        @warn 'Screen không tồn tại!!'
+    }
+}

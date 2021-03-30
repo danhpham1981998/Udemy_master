@@ -1,0 +1,43 @@
+.student{
+    margin-top: $mg-2;
+    .student__content{
+        width: 90%;
+        margin: auto;
+        h3{
+            @include styleText($color-black-0,$fs-3,$fw-normal);
+        }
+        .card-body{
+            border-bottom: 1px solid $color-gray-3;
+            .card-title{
+                @include styleText($color-black-0,$fs-0,$fw-bold);
+            }
+            .card-text{
+                @include styleText($color-gray-4,$fs-1,$fw-normal);
+            }
+            .rating{
+                .rating__star{
+                    @include styleText($color-yellow,$fs-1,$fw-normal);
+                    margin-right: $mg-1;
+                }
+                span:nth-child(2){
+                    @include styleText($color-black-0,$fs-1,$fw-bold);
+                    margin-right: $mg-0;
+                }
+                span:last-child{
+                    @include styleText($color-gray-4,$fs-1,$fw-normal);
+                }
+            }
+            .courses__price{
+                text-align: right;
+                .old-price{
+                    @include styleText($color-gray-4,$fs-1,$fw-normal);
+                    text-decoration: line-through;
+                }
+                .new-price{
+                    @include styleText($color-black-0,$fs-0,$fw-bold);
+                }
+            }
+        }
+        
+    }
+}

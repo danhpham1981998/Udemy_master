@@ -1,0 +1,54 @@
+.banner{
+    margin-top: $mg-2;
+    .banner__background{
+        background-image: url(../img/purple-intersect.svg);
+        background-color: $color-purple;
+        background-size: auto 120%;
+        background-position: 0 -2.4rem;
+        
+        .banner__content{
+            padding: 4.8rem 0;
+            text-align: center;
+            .banner__text{
+                h2{
+                    @include styleText($color-white-0,$fs-3,$fw-bold);
+                }
+                p{
+                    @include styleText($color-white-0,$fs-0,$fw-normal);
+                }
+            }
+        }
+    }
+    // .banner__top{
+    //     background-image: linear-gradient(to right , $color-purple , $color-red-0);
+    //     height: 8px;
+    // }
+    // .banner__content{
+    //     background-color: $color-gray-4;
+    //     width: 100%;
+    //     text-align: center;
+
+    //     .banner_items{
+    //         .banner_icon{
+    //             // i{
+    //             //     @include styleText($color-white-0,$fs-4,$fw-normal);
+    //             // }
+                
+    //         }
+    //     }
+        
+        
+    //     .banner__text{
+    //         align-items: center;
+    //         h2{
+    //             @include styleText($color-white-0,$fs-3,$fw-bold);
+    //             margin-bottom: 16px;
+    //         }
+    //         p{
+    //             @include styleText($color-white-0,$fs-1,$fw-normal);
+
+    //         }
+    //     }
+        
+    // }
+}

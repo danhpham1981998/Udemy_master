@@ -1,0 +1,34 @@
+.topCategories{
+    margin:$mg-2;
+    .topCategories__title{
+        width: 90%;
+        margin: auto;
+        h1{
+            @include styleText($color-black-0,$fs-2,$fw-bold);
+        }
+    }
+    .topCategories__content{
+        width: 90%;
+        margin: auto;
+
+        .topCategories__item{
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid $color-gray-3;
+            transition: all .5s;
+            &:hover{
+                border-bottom: 1px solid $color-gray-6;
+            }
+            span{
+                i{
+                    @include styleText($color-gray-2,$fs-4,$fw-normal);
+                    margin-right:$mg-2;
+                }
+            }
+            .topCategories__text{
+                padding-top: $pd-2;
+
+            }
+        }
+    }
+}

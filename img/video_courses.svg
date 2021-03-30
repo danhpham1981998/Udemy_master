@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="For-Engineering" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ValProp-Specs" transform="translate(-977.000000, -216.000000)" fill-rule="nonzero">
+            <g id="Group-16" transform="translate(957.000000, 193.000000)">
+                <g id="Group-7" transform="translate(21.000000, 24.000000)">
+                    <ellipse id="Oval-5" stroke="#F5F4F0" fill="#76C5D6" stroke-linecap="round" stroke-linejoin="round" cx="22.3695652" cy="22.9090909" rx="19.5059289" ry="19.0909091"></ellipse>
+                    <g id="Group-17">
+                        <path d="M17.2353559,23.7082093 L23.1775837,19.0899862 L17.2353559,14.4717631 L17.2353559,23.709494 L17.2353559,23.7082093 Z M16.8499073,11.6597213 L25.3879105,18.2973732 C25.9009995,18.6968913 25.9009995,19.4830811 25.3879105,19.8825992 L16.8499073,26.5202512 C16.2041228,27.0225391 15.2727273,26.5536514 15.2727273,25.7276382 L15.2727273,12.4536189 C15.2727273,11.6276057 16.2041228,11.1600025 16.8499073,11.6610059 L16.8499073,11.6597213 Z" id="Shape" fill="#FFFFFF"></path>
+                        <circle id="Oval-2" stroke="#430E32" stroke-width="2" cx="19.0909091" cy="19.0909091" r="19.0909091"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,28 @@
+.service{
+    .service__content{
+        width:90%;
+        margin:auto;
+        .service__item{
+            width: 25%;
+            ul{
+                list-style: none;
+                li{
+                    a{
+                        text-decoration: none;
+                        @include styleText($color-blue,$fs-0, $fw-normal);
+                        &:hover{
+                            text-decoration: none;
+                            color: $color-black-0;
+                        }
+                    }
+                }
+            }
+            button.ude-language{
+                padding: 0 $pd-2;
+                @include styleButton($color-white-0,$color-gray-4,$pd-1 + 1,$pd-1 + 2,$border-radius);
+                @include styleText($color-gray-4,$fs-0,$fw-bold-1);
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,83 @@
+.header__left{
+    display: flex;
+    .navbar-brand{
+        // flex-grow: ;
+        img{
+            width: 110px;
+
+        }
+    }
+    .categories{
+        margin-right:5px;
+        align-self: center;
+    }
+    .header__form{
+        flex-grow:1;
+        @include styleFormSearch($color-white-cream,$color-white-cream,$color-gray-6);
+        // .input-group{
+        //     background-color:$color-white-cream;
+        //     border: 1px solid $color-white-cream;
+        //     .form-control{
+        //         background-color: transparent;
+        //         border-color: transparent;
+        //         box-shadow: none;
+        //         transition: none;
+        //         &:focus{
+        //             background-color:$color-white-0;
+        //             border-color: $color-gray-6;
+        //             border-right-color: transparent;
+        //             //.form-control:focus
+        //             & + .input-group-append{
+        //                 .input-group-text{
+        //                     background-color:$color-white-0;
+        //                     border-color: $color-gray-6;
+        //                     border-left-color: transparent;
+        //                     &:hover{
+        //                         color: $color-white-0;
+        //                         background-color:$color-red-0;
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        //     .input-group-text{
+        //         background-color:transparent;
+        //         border-color: transparent;
+        //         color: $color-red-0;
+        //         &:hover{
+        //             color: $color-white-0;
+        //             background-color:$color-red-0;
+        //         }
+        //     }
+        // }
+    }
+}
+.header__right{
+
+
+    //responsive
+    @include responsive("extra-large"){
+        //content
+        .business,.teach{
+            display:none;
+        }
+        
+    }
+}
+
+//responsive
+
+@include responsive("medium"){
+    .header__left{
+        justify-content: center;
+        .categories,.header__form{
+            display:none;
+        }
+    }
+    .header__right{
+        .btn-groups{
+            display:none;
+        }
+    }
+    
+}

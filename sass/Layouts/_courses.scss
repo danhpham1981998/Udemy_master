@@ -1,0 +1,141 @@
+.courses{
+    margin-top: $mg-2;
+    .courses__content{
+        width: 90%;
+        margin: auto;
+        .courses__title{
+            padding-top: 8rem;
+            h3{
+                @include styleText($color-black-0,$fs-2 - 1,$fw-bold);
+            }
+        }
+        .myTab{
+            .nav{
+                justify-content:space-between;
+                border: none;
+                .nav-item{
+                    &:hover{
+                        .nav-link{
+                            border: none;
+                        }
+                    }
+                    .nav-link.active{
+                        border: none;
+                        border-bottom: 5px solid $color-blue;
+                    }
+                    .nav-link{
+                        @include styleText($color-black-0,$fs-0,$fw-normal);
+                        border: none;
+                    }
+                }
+            }
+            .tab-content{
+                margin-top: $mg-2;
+                position: relative;
+                .card-body{
+                    border-bottom: 1px solid $color-gray-3;
+                    .card-title{
+                        @include styleText($color-black-0,$fs-0,$fw-bold);
+                    }
+                    .card-text{
+                        @include styleText($color-gray-4,$fs-1,$fw-normal);
+                    }
+                    .rating{
+                        .rating__star{
+                            @include styleText($color-yellow,$fs-1,$fw-normal);
+                            margin-right: $mg-1;
+                        }
+                        span:nth-child(2){
+                            @include styleText($color-black-0,$fs-1,$fw-bold);
+                            margin-right: $mg-0;
+                        }
+                        span:last-child{
+                            @include styleText($color-gray-4,$fs-1,$fw-normal);
+                        }
+                    }
+                    .courses__price{
+                        text-align: right;
+                        .old-price{
+                            @include styleText($color-gray-4,$fs-1,$fw-normal);
+                            text-decoration: line-through;
+                        }
+                        .new-price{
+                            @include styleText($color-black-0,$fs-0,$fw-bold);
+                        }
+                    }
+                }
+                
+            }
+            
+        }
+    }
+}
+//     position: relative;
+//     width: 100%;
+//     .courses__title{
+//         position: absolute;
+//         left: 50%;
+//         top: 50%;
+//         transform: translate(-50%,-50%);
+        
+//     }
+//     .nav-tabs{
+//         @include styleText($color-black-0,$fs-1,$fw-bold);
+//         .nav-item{
+//             .nav-link
+//             {
+//                 color: $color-black-0;
+//                 border: white;
+//                 .active::after{
+//                     content: '';
+//                     display: block;
+//                     bottom:-1px;
+//                     left: 0;
+//                     width: 100vh;
+//                     height: 3px;
+//                     background-color: $color-blue;
+//                     transition:all .5s;
+//                     &:hover{
+//                         color: $color-blue;
+//                     }
+//                 }
+                
+//             }
+//         }
+//     }  
+//     padding: $pd-2 0;
+//     .courses__content{
+//         width: 100%;
+//         display: flex;
+//         justify-content: space-around;
+//         .courses__item{
+//             width: 25%;
+//             padding: 0 $pd-0;
+            
+//             .courses__text{
+//                 padding:$pd-1 0 0 $pd-1;
+//                 h5{
+//                     @include styleText($color-black-0,$fs-1,$fw-bold);
+//                 }
+//                 p{
+//                     @include styleText($color-black-0,$fs-1,$fw-normal);
+//                 }
+//                 span{
+//                     @include styleText($color-black-0,$fs-1,$fw-normal);
+//                 }
+//                 border-bottom: 1px solid $color-gray-3;
+//             }
+//             .courses__price{
+//                 p{
+//                     font-weight: $fw-bold;
+//                     span.line-through{
+//                         text-decoration: line-through;
+//                         font-weight: $fw-normal;
+//                     }
+                    
+//                 }
+//             }
+//         }
+//     }
+    
+// }

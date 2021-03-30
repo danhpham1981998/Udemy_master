@@ -1,0 +1,17 @@
+.partner{
+    margin-top:$mg-2;
+    .partner__title{
+        
+        p{
+            @include styleText($color-gray-4,$fs-1,$fw-normal);
+        }
+    }
+    .partner__content{
+        margin-top: $mg-2;
+        .partner__brand{
+            width: 80%;
+            margin: auto;
+            justify-content: space-around;
+        }
+    }
+}

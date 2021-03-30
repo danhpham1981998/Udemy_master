@@ -1,0 +1,47 @@
+// base - reset
+//     - customize
+// helper - variables
+//         - mizin
+//         -extend
+// component - button
+        // - input
+
+// Layouts - header
+//         -footer
+
+// pages - Home Page
+//     - Admin
+
+// vendor chứa các file của thư viện mà mình sử dụng
+// Theme
+// Helper
+@import './Helper/variables';
+@import './Helper/mixin';
+
+//Base
+@import './Base/reset';
+// file sass của thư viện
+//vendors
+@import './Base/customize';
+
+// Components
+@import './Components/button';
+
+//Layout
+@import './Layouts/header';
+@import './Layouts/carousel';
+@import './Layouts/intro';
+@import './Layouts/courses';
+@import './Base/normalized';
+@import './Layouts/ownpace';
+@import './Layouts/student';
+@import './Layouts/banner';
+@import './Layouts/topCategories';
+@import './Layouts/feedbacks';
+@import './Layouts/partner';
+@import './Layouts/instructor';
+@import './Layouts/service';
+@import './Layouts/footer';
+// Pages
+
+//Theme
